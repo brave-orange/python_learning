@@ -1,3 +1,6 @@
+#文档测试
+
+
 def fact(n):
     '''
     Calculate 1*2*...*n
