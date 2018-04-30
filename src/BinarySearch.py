@@ -1,4 +1,4 @@
-#µİ¹é¶ş·Ö²éÕÒ
+#é€’å½’äºŒåˆ†æŸ¥æ‰¾
 
 a=[i for i in range(1,100000000)]
 def search(a,left,right,num):
