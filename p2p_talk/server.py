@@ -2,7 +2,7 @@
 # encoding=utf-8
 
 import socket
-import threading,time,fcntl, struct,os,time
+import threading,time,fcntl, struct,os,time,json
 from urllib2 import urlopen
 
 class Iptable(object):
@@ -63,7 +63,10 @@ class Iptable(object):
     def refreshIptables(self,header):  #获取更新iptables
         #self.addip(ips)
         print "更新现有的iptables"
-        print "网内ip已更新："+header
+        ip_str = header["Iptables"]
+        ips = json.loads(ip_str)
+        self.addip(set(ips))
+        print "网内ip已更新"
 
     def recv(self,sock,addr):   #处理接收到的请求
         h = sock.recv(1024).decode('utf-8')
