@@ -51,7 +51,7 @@ class Iptable(object):
         response = "Content-Type:response\r\n" #表示是对点请求
         response += "Method:refreshIptables\r\n" #表示目的是得到IP列表
         response += "From:"+self.myaddr+"\r\n" #来源ip
-        response += "Port:6666\r\n\r\n"   #端口号
+        response += "Port:6666\r\n"   #端口号
         iptables_str = "["
         for ip in self.iptables:
             iptables_str += ip + ','
