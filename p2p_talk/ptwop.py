@@ -2,13 +2,10 @@
 # encoding=utf-8
 
 import socket
-
 import threading,time,fcntl, struct,os,random
-
 '''
 kad算法
 '''
-
 class Iptable(object):
 
     def __init__(self):
@@ -27,14 +24,14 @@ class Iptable(object):
         print "p2p创世节点初始化完成"
         
 
-    def makeId(self):
+    def makeId(self):   #生成随机ID
         str = ""
         for i in range(15):
             ch = chr(random.randrange(ord('0'), ord('9') + 1))
             str += ch
         self.nodeId  = hex(long(str)) #python2
         #self.nodeId  = hex(int(str)) #python3
-    def addto_k_bucket(self,nodeId,ip,port,distance):   #添加K桶
+    def addto_k_bucket(self,nodeId,ip,port,distance):   #添加一个节点到K桶
         if len(self.k_bucket) < self k_number:
             self.k_bucket.append({"KadId":nodeId,"ip"：ip,"port":int(port),"distance":int(int(self.nodeId,16)^,int(nodeId,16))})
         else:
@@ -83,18 +80,42 @@ class Iptable(object):
         response += "From:"+self.myaddr+"\r\n"
         response += "Port:6666\r\n"   #端口号
         nodes = []
-        for k in self.k_bucket:    #找到k桶中离请求点最近的k_number个节点
+        for i,k in self.k_bucket:    #找到k桶中离请求点最近的k_number个节点
+            
             distance = k["KadId"]^nodeId
+            if distance == 0:
+                continue
             if len(nodes) < self.k_number:
-                nodes.append({"nodeId":nodeId,"ip":ip,"port":int(port),"distance":int(distance,16)}) 
+                nodes.append({"nodeId": k["KadId"],"ip":ip,"port": k["port"],"distance":int(distance,16)}) 
             else:
+                max_node = nodes[0]
                 for n in nodes:
-                    if n["distance"] > distance:
-                        nodes[nodes.index(n)] = {"nodeId":nodeId,"ip":ip,"port":int(port),"distance":int(distance,16)}   #替换距离更大的
+                    if n["distance"] > max_node["distance"]:
+                        max_node = n
+                if distance < max_node["distance"]:
+                    nodes[nodes.index(max_node)] = {"nodeId": k["KadId"],"ip":ip,"port":int(port),"distance":int(distance,16)}   #替换距离更大的
         msg = json.dumps(nodes)
         response += "Kbucket:"+msg+"\r\n\r\n"
         addr = (ip,int(port))
         self.socket.sendto(response,addr)
+    
+    def refresh_k_bucket(self,nodes): #收到节点数据刷新k桶
+        for k in nodes:
+            for value in self.k_bucket:
+                distance = k["KadId"]^value["nodeId"]
+                if distance == 0:
+                    continue
+                if len(self.k_bucket) < self.k_number:
+                    nodes.append({"KadId": k["nodeId"],"ip":ip,"port": k["port"],"distance":int(distance,16)}) 
+                else:
+                    max_node = nodes[0]
+                    for n in self.k_bucket:
+                        if n["distance"] > max_node["distance"]:
+                            max_node = n
+                    if distance < max_node["distance"]:
+                        self.k_bucket[nodes.index(max_node)] = {"nodeId": k["nodeId"],"ip":ip,"port":int(port),"distance":int(distance,16)}
+
+        print "已刷新K桶"
 
     def getIptables(self,port,ip,sock):  #发送现有的IP列表
         print "返回iptables至请求的机器"
