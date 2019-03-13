@@ -42,9 +42,10 @@ class Iptable(object):
             print request
             self.socket.connect((ip,6666)) 
             self.socket.send(request)
+            self.socket.close()
             print "发送一条广播"
 
-    def getIptables(self,port,ip):  #发送现有的IP列表
+    def getIptables(self,port,ip,sock):  #发送现有的IP列表
         print "返回iptables至请求的机器"
         self.socket.connect((ip,port))
         self.iptables.add(ip)
@@ -58,14 +59,15 @@ class Iptable(object):
         iptables_str = iptables_str.strip(',');
         iptables_str += "]"
         response += "Iptables:"+iptables_str+"\r\n\r\n"   #端口号
-        self.socket.send(response)
+        sock.send(response)
 
-    def refreshIptables(self,header):  #获取更新iptables
+    def refreshIptables(self,header,sock):  #获取更新iptables
         #self.addip(ips)
         print "更新现有的iptables"
         ip_str = header["Iptables"]
         ips = json.loads(ip_str)
         self.addip(set(ips))
+        sock.close()
         print "网内ip已更新"
 
     def recv(self,sock,addr):   #处理接收到的请求
@@ -73,10 +75,10 @@ class Iptable(object):
         headers = self.headers(h)
         if headers["Content-Type"] == "radio":
             print "收到广播"
-            eval("self."+headers["Method"])(headers["Port"],headers["From"])   #执行操作
+            eval("self."+headers["Method"])(headers["Port"],headers["From"],sock)   #执行操作
         if headers["Content-Type"] == "response":    #返回数据
             print "收到回复"
-            eval("self."+headers["Method"])(header)   #执行操作
+            eval("self."+headers["Method"])(header,sock)   #执行操作
 
 
 
