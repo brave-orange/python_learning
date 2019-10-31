@@ -24,7 +24,7 @@ def download_page(url):
 
 def get_li(doc):
     soup = BeautifulSoup(doc, 'html.parser')
-    ol = soup.find('ol'''', class_='grid_view'''')
+    ol = soup.find('ol', class_='grid_view')
     name = []  # 名字
     star_con = []  # 评价人数
     score = []  # 评分
