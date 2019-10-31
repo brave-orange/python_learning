@@ -38,7 +38,16 @@ class NodeTree:   #节点树
     def get_deep(self):
         if(node != None):
             self.get_deep(self)
-'''
+    def __iter__(self): #可迭代对象
+        return self.__generator()
+    def __generator(self):  #生成器
+        if self.left_child is not None:
+            yield from iter(self.left_child) 
+        yield self.ip
+
+        if self.right_child is not None:
+            yield from iter(self.right_child)             
+
 tree = NodeTree({"id":"1011001","ip":"127.0.0.1"})
 tree.insett_left({"id":"1000001","ip":"127.0.0.2"})
 tree.insett_right({"id":"1001011","ip":"127.0.0.3"})
@@ -47,32 +56,6 @@ tree.left_child.insett_right({"id":"1000001","ip":"127.0.0.5"})
 tree.right_child.insett_left({"id":"1000001","ip":"127.0.0.6"})
 tree.right_child.insett_right({"id":"1000001","ip":"127.0.0.7"})
 
-a = tree.inorder_tree(tree)
 
-print(a)
-
-id = randint(1,100000);
-k_bucket = {}
-ids = [5248,15848,65489]
-for k in ids:
-    k_bucket[str(k)] = {"id":str(k),"distance":id^k}
-
-print(k_bucket)
-#发送PING，
-
-
-socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-msg = b'Hello world'
-addr = ('127.0.0.1',9090)
-socket.sendto(msg,addr)
-
-'''
-
-str = ""
-for i in range(15):
-    ch = chr(random.randrange(ord('0'), ord('9') + 1))
-    str += ch
-a = int(str)
-id = hex(a)[0]
-print(int("0xbda0e659f6c5",base=16)^int(id,base=16))
-
+for ele in tree:  
+    print(ele)

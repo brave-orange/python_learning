@@ -17,7 +17,7 @@ def send_message(sock):
         sock.send(data.encode('utf-8'))
         time.sleep(5)
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect(("118.25.190.146",6666))        
+s.connect(("114.91.184.198",9005))        
 
 
 recv1 = threading.Thread(target=recv_message, args=(s,))
