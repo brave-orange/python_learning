@@ -13,9 +13,4 @@ def find_num(n,nums):
         return find_num(1,nums[n:])+find_num(2,nums[n:])
 
 
-print(find_num(1,"226")+find_num(2,"226"))
-
-
-
-
-
+print(find_num(1,"2222222211126")+find_num(2,"226"))

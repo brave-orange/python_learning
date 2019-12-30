@@ -1,0 +1,282 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BeautifulSoup	.\src\douban.py	/^from bs4 import BeautifulSoup$/;"	i
+Blockchain	.\src\Blockchain.py	/^class Blockchain(object):$/;"	c
+DOWNLOAD_URL	.\src\douban.py	/^DOWNLOAD_URL = 'http:\/\/movie.douban.com\/top250\/'$/;"	v
+DictorGenerate	.\src\code.py	/^class DictorGenerate():$/;"	c
+Flask	.\src\Blockchain.py	/^from flask import Flask, jsonify, request$/;"	i
+GetBrands	.\getcar_info\car.py	/^def GetBrands():$/;"	f
+GetBrandsPage	.\getcar_info\car.py	/^def GetBrandsPage(start):$/;"	f
+GetCarsdata	.\getcar_info\car.py	/^def GetCarsdata(urls):$/;"	f
+GetDouBanMovie	.\src\get_cars.py	/^def GetDouBanMovie():$/;"	f
+GetDouBanMovie	.\src\getbloginfo.py	/^def GetDouBanMovie():$/;"	f
+GetHtml	.\getcar_info\car.py	/^def GetHtml(url):$/;"	f
+GetpageUrl	.\getcar_info\car.py	/^def GetpageUrl(pages):  #获取分页信息$/;"	f
+Iptable	.\p2p_talk\ptwop.py	/^class Iptable(object):$/;"	c
+Iptable	.\p2p_talk\server.py	/^class Iptable(object):$/;"	c
+L	.\src\lambda.py	/^L = list(filter(lambda x : 1 if x%2 == 1  else 0, range(1,20)))$/;"	v
+L	.\src\sorted.py	/^L = [('Bob', 75), ('Adam', 92), ('Bart', 66), ('Lisa', 88)]$/;"	v
+Man	.\src\������.py	/^class Man(object):$/;"	c
+NodeTree	.\p2p_talk\test.py	/^class NodeTree:   #节点树$/;"	c
+Pool	.\src\ProcessPool.py	/^from multiprocessing import Pool$/;"	i
+Pool	.\src\Thread.py	/^from multiprocessing import Pool$/;"	i
+Process	.\p2p_talk\client.py	/^from multiprocessing import Process$/;"	i
+Process	.\src\process.py	/^from multiprocessing import Process$/;"	i
+PyQuery	.\getcar_info\car.py	/^from pyquery import PyQuery$/;"	i
+PyQuery	.\src\get_cars.py	/^from pyquery import PyQuery$/;"	i
+PyQuery	.\src\getbloginfo.py	/^from pyquery import PyQuery$/;"	i
+SearchFile	.\src\SearchFile.py	/^class SearchFile:$/;"	c
+Student	.\src\Student.py	/^class Student(object):$/;"	c
+Student	.\src\TestStudent.py	/^from Student import Student$/;"	i
+Student	.\src\������.py	/^class Student(object):$/;"	c
+TestStudent	.\src\TestStudent.py	/^class TestStudent(unittest.TestCase):$/;"	c
+Workbook	.\src\douban.py	/^from openpyxl import Workbook$/;"	i
+__generator	.\p2p_talk\test.py	/^    def __generator(self):  #生成器$/;"	m	class:NodeTree	file:
+__init__	.\p2p_talk\ptwop.py	/^    def __init__(self):$/;"	m	class:Iptable
+__init__	.\p2p_talk\server.py	/^    def __init__(self):$/;"	m	class:Iptable
+__init__	.\p2p_talk\test.py	/^    def __init__(self,node):$/;"	m	class:NodeTree
+__init__	.\src\Blockchain.py	/^    def __init__(self):$/;"	m	class:Blockchain
+__init__	.\src\SearchFile.py	/^    def __init__(slef,path,str):$/;"	m	class:SearchFile
+__init__	.\src\Student.py	/^    def __init__(self, name, score):$/;"	m	class:Student
+__init__	.\src\code.py	/^    def __init__(self, minLength, maxLength):$/;"	m	class:DictorGenerate
+__init__	.\src\������.py	/^    def __init__(self, name):$/;"	m	class:Student
+__init__	.\src\������.py	/^    def __init__(self,height):$/;"	m	class:Man
+__iter__	.\p2p_talk\test.py	/^    def __iter__(self): #可迭代对象$/;"	m	class:NodeTree	file:
+__slots__	.\src\������.py	/^    __slots__ = ["name","age","height","NO"]    #只允许添加括号内的几个属性$/;"	v	class:Man
+_not_divisible	.\src\����.py	/^def _not_divisible(n):    #筛选函数$/;"	f
+_odd_iter	.\src\����.py	/^def _odd_iter():$/;"	f
+a	.\src\BinarySearch.py	/^a=[i for i in range(1,100000000)]$/;"	v
+a	.\src\sorted.py	/^a = sorted(L,key = by_name,reverse=True)   #reverse:反向$/;"	v
+a	.\src\�հ�����.py	/^a = createCounter()$/;"	v
+a	.\src\װ����.py	/^def a(c):   $/;"	f
+addip	.\p2p_talk\server.py	/^    def addip(self,ips):$/;"	m	class:Iptable
+addr	.\p2p\client.py	/^    addr = ('114.91.184.198',9005)$/;"	v
+addto_k_bucket	.\p2p_talk\ptwop.py	/^    def addto_k_bucket(self,nodeId,ip,port):   #添加一个节点到K桶$/;"	m	class:Iptable
+app	.\src\Blockchain.py	/^app = Flask(__name__)$/;"	v
+arr	.\src\quicksort.py	/^arr = []$/;"	v
+b	.\src\װ����.py	/^def b():$/;"	f
+bag	.\src\bag.py	/^bag = 10$/;"	v
+blockchain	.\src\Blockchain.py	/^blockchain = Blockchain()$/;"	v
+by_name	.\src\sorted.py	/^def by_name(t):$/;"	f
+c	.\src\map_test.py	/^def c(name):$/;"	f
+calc	.\src\�쳣.py	/^def calc(exp):$/;"	f
+chardet	.\getcar_info\car.py	/^import chardet,re,pymysql,threading,time$/;"	i
+chardet	.\src\get_cars.py	/^import chardet,re$/;"	i
+codecs	.\src\douban.py	/^import codecs$/;"	i
+config	.\gitauto\config.py	/^config = {}$/;"	v
+consensus	.\src\Blockchain.py	/^def consensus():$/;"	f
+count	.\getcar_info\car.py	/^count = GetBrands()$/;"	v
+count	.\src\������.py	/^    count = 0$/;"	v	class:Student
+counter	.\src\�հ�����.py	/^    def counter():$/;"	f	function:createCounter
+createCounter	.\src\�հ�����.py	/^def createCounter():$/;"	f
+data	.\src\imgtoarray.py	/^data = zeros((1,img.shape[2]*img.shape[1]*img.shape[0]))$/;"	v
+dedent	.\src\Blockchain.py	/^from textwrap import dedent$/;"	i
+defaultdict	.\p2p_talk\test.py	/^from collections import defaultdict$/;"	i
+dest_filename	.\src\douban.py	/^dest_filename = '电影.xlsx'$/;"	v
+dg	.\src\code.py	/^    dg = DictorGenerate(min, max)$/;"	v	class:DictorGenerate
+dict_file	.\src\code.py	/^dict_file = "dict.txt"$/;"	v
+doctest	.\src\DocTest.py	/^    import doctest$/;"	i
+download_page	.\src\douban.py	/^def download_page(url):$/;"	f
+dp	.\src\bag.py	/^dp = [[0 for _ in range(10)] for _ in range(size)]$/;"	v
+f	.\src\Iterator.py	/^def f(x):$/;"	f
+fact	.\src\DocTest.py	/^def fact(n):$/;"	f
+fcntl	.\p2p_talk\ptwop.py	/^import threading,time,fcntl, struct,os,random,json$/;"	i
+find_num	.\test1.py	/^def find_num(n,nums):$/;"	f
+findall	.\src\SearchFile.py	/^    def findall(slef,path_now):$/;"	m	class:SearchFile
+finddir	.\src\SearchFile.py	/^    def finddir(slef):$/;"	m	class:SearchFile
+full_chain	.\src\Blockchain.py	/^def full_chain():$/;"	f
+generate	.\src\code.py	/^    def generate(self):$/;"	m	class:DictorGenerate
+getAllfileAndDirPath	.\change.py	/^def getAllfileAndDirPath(sourcePath):$/;"	f
+getIptables	.\p2p_talk\server.py	/^    def getIptables(self,port,ip,sock):  #发送现有的IP列表$/;"	m	class:Iptable
+get_deep	.\p2p_talk\test.py	/^    def get_deep(self):$/;"	m	class:NodeTree
+get_grade	.\src\Student.py	/^    def get_grade(self):$/;"	m	class:Student
+get_li	.\src\douban.py	/^def get_li(doc):$/;"	f
+get_nodes	.\p2p\client.py	/^def get_nodes(socket,addr):  #ask to server$/;"	f
+getcars	.\getcar_info\car.py	/^def getcars(car_page):$/;"	f
+hash	.\src\Blockchain.py	/^    def hash(block):$/;"	m	class:Blockchain
+hashlib	.\src\Blockchain.py	/^import hashlib$/;"	i
+header	.\gitauto\git-robot.py	/^    header = headers(res)$/;"	v
+headers	.\gitauto\git-robot.py	/^def headers(data):$/;"	f
+headers	.\p2p\client.py	/^def headers(data):        #解析数据包$/;"	f
+headers	.\p2p\client.py	/^def headers(self,data):        #解析数据包$/;"	f
+headers	.\p2p_talk\ptwop.py	/^    def headers(self,data):        #解析数据包$/;"	m	class:Iptable
+headers	.\p2p_talk\server.py	/^    def headers(self,str):        #解析数据包$/;"	m	class:Iptable
+heart	.\p2p\client.py	/^def heart(socket,addr):  #发送心跳$/;"	f
+i	.\src\�հ�����.py	/^i = 0$/;"	v
+img	.\src\imgtoarray.py	/^img = imread('sad.png')$/;"	v
+imread	.\src\imgtoarray.py	/^from scipy.misc import imread$/;"	i
+inorder_tree	.\p2p_talk\test.py	/^    def inorder_tree(self,node):    #中序遍历#写代码不能懒啊，ctrl+c+v把递归的函数都用的先序遍历的，顺序不对白白找了一两个小时$/;"	m	class:NodeTree
+insertCars	.\getcar_info\car.py	/^def insertCars(cars,brand):$/;"	f
+insett_left	.\p2p_talk\test.py	/^    def insett_left(self,new_node):    #插入左子树$/;"	m	class:NodeTree
+insett_right	.\p2p_talk\test.py	/^    def insett_right(self,new_node):   #插入右子树$/;"	m	class:NodeTree
+iptable	.\p2p_talk\ptwop.py	/^iptable = Iptable()$/;"	v
+iptable	.\p2p_talk\server.py	/^iptable = Iptable()$/;"	v
+itr	.\src\code.py	/^import itertools as itr$/;"	i
+j	.\bage.py	/^        j = j + 1$/;"	v
+j	.\src\bag.py	/^        j = j - w[r]  #剩余容量$/;"	v
+j	.\src\bag.py	/^    j = 10$/;"	v
+json	.\gitauto\git-robot.py	/^import json,time$/;"	i
+json	.\p2p\client.py	/^import socket,time,threading,json$/;"	i
+json	.\p2p_talk\ptwop.py	/^import threading,time,fcntl, struct,os,random,json$/;"	i
+json	.\p2p_talk\server.py	/^import threading,time, struct,os,time,json$/;"	i
+json	.\p2p_talk\test.py	/^import json,time,socket,os$/;"	i
+json	.\src\Blockchain.py	/^import json$/;"	i
+jsonify	.\src\Blockchain.py	/^from flask import Flask, jsonify, request$/;"	i
+last_block	.\src\Blockchain.py	/^    def last_block(self):$/;"	m	class:Blockchain
+long_time_task	.\src\ProcessPool.py	/^def long_time_task(name):$/;"	f
+loop	.\src\Thread.py	/^def loop():$/;"	f
+m	.\bage.py	/^m = 10$/;"	v
+m	.\src\������.py	/^m = Man(150)  $/;"	v
+main	.\src\douban.py	/^def main():$/;"	f
+main	.\src\�쳣.py	/^def main():$/;"	f
+makeId	.\p2p_talk\ptwop.py	/^    def makeId(self):   #生成随机ID$/;"	m	class:Iptable
+max_value	.\src\bag.py	/^            max_value = v$/;"	v
+max_value	.\src\bag.py	/^max_value = 0$/;"	v
+method	.\src\jiecheng.py	/^def method(num):$/;"	f
+method2	.\src\jiecheng.py	/^def method2(num):$/;"	f
+mine	.\src\Blockchain.py	/^def mine():$/;"	f
+multiprocessing	.\src\Thread.py	/^import threading, multiprocessing$/;"	i
+myaddr	.\p2p\client.py	/^myaddr = ()$/;"	v
+n	.\bage.py	/^n = 6$/;"	v
+name	.\src\map_test.py	/^name = map(c,names)$/;"	v
+names	.\src\map_test.py	/^names = ["age" , 'adam', 'LISA', 'barT' ]   $/;"	v
+new_block	.\src\Blockchain.py	/^    def new_block(self, proof, previous_hash=None):$/;"	m	class:Blockchain
+new_transaction	.\src\Blockchain.py	/^    def new_transaction(self, sender, recipient, amount):$/;"	m	class:Blockchain
+new_transaction	.\src\Blockchain.py	/^def new_transaction():$/;"	f
+node_identifier	.\src\Blockchain.py	/^node_identifier = str(uuid4()).replace('-', '')$/;"	v
+nodes	.\p2p\client.py	/^nodes = []$/;"	v
+nodes_back	.\p2p\client.py	/^def nodes_back(socket,addr):    #服务端返回节点列表$/;"	f
+np	.\bage.py	/^import numpy as np$/;"	i
+os	.\change.py	/^import os$/;"	i
+os	.\gitauto\git-robot.py	/^import socket,os$/;"	i
+os	.\p2p_talk\client.py	/^import os$/;"	i
+os	.\p2p_talk\ptwop.py	/^import threading,time,fcntl, struct,os,random,json$/;"	i
+os	.\p2p_talk\server.py	/^import threading,time, struct,os,time,json$/;"	i
+os	.\p2p_talk\test.py	/^import json,time,socket,os$/;"	i
+os	.\src\ProcessPool.py	/^import os, time, random$/;"	i
+os	.\src\SearchFile.py	/^import os, os.path$/;"	i
+os	.\src\code.py	/^import os$/;"	i
+os	.\src\process.py	/^import os$/;"	i
+p	.\src\ProcessPool.py	/^    p = Pool()     #默认一次可运行和CPU核心数相同的进程，其余进程需要等前面某个进程执行结束$/;"	v
+p	.\src\Thread.py	/^    p = Pool()$/;"	v
+param	.\src\code.py	/^    param = param.replace("'", "").replace("[", "").replace("]", "")$/;"	v	class:DictorGenerate
+param	.\src\code.py	/^    param = str(sys.argv[1:])$/;"	v	class:DictorGenerate
+param_len	.\src\code.py	/^    param_len = len(sys.argv[1:])$/;"	v	class:DictorGenerate
+params	.\src\code.py	/^    params = param.split(",")$/;"	v	class:DictorGenerate
+path	.\src\SearchFile.py	/^import os, os.path$/;"	i
+postorder_tree	.\p2p_talk\test.py	/^    def postorder_tree(self,node):    #后序遍历$/;"	m	class:NodeTree
+preorder_tree	.\p2p_talk\test.py	/^    def preorder_tree(self,node):    #先序遍历$/;"	m	class:NodeTree
+primes	.\src\����.py	/^def primes():$/;"	f
+proof_of_work	.\src\Blockchain.py	/^    def proof_of_work(self, last_proof):$/;"	m	class:Blockchain
+pymysql	.\getcar_info\car.py	/^import chardet,re,pymysql,threading,time$/;"	i
+quicksort	.\src\quicksort.py	/^def quicksort(left,right):$/;"	f
+r	.\src\Iterator.py	/^r = map(f , [1,2,3,4,5,6,7,8,9])   #执行f函数，并返回值为迭代器$/;"	v
+r	.\src\bag.py	/^        r = r+1$/;"	v
+r	.\src\bag.py	/^    r = 0$/;"	v
+random	.\p2p_talk\ptwop.py	/^import threading,time,fcntl, struct,os,random,json$/;"	i
+random	.\p2p_talk\test.py	/^import random$/;"	i
+random	.\src\ProcessPool.py	/^import os, time, random$/;"	i
+random	.\src\quicksort.py	/^import random$/;"	i
+re	.\getcar_info\car.py	/^import chardet,re,pymysql,threading,time$/;"	i
+re	.\p2p_talk\server.py	/^import requests,re$/;"	i
+re	.\src\douban.py	/^import re$/;"	i
+re	.\src\get_cars.py	/^import chardet,re$/;"	i
+receive	.\p2p\client.py	/^    receive = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)$/;"	v
+recv	.\p2p\client.py	/^def recv(receive,server_addr):$/;"	f
+recv	.\p2p_talk\ptwop.py	/^    def recv(self,header):   #处理接收到的请求$/;"	m	class:Iptable
+recv	.\p2p_talk\server.py	/^    def recv(self,sock,addr):   #处理接收到的请求$/;"	m	class:Iptable
+recv1	.\p2p_talk\client.py	/^recv1 = threading.Thread(target=recv_message, args=(s,))$/;"	v
+recv_message	.\p2p_talk\client.py	/^def recv_message(sock):$/;"	f
+recv_ping	.\p2p\client.py	/^def recv_ping(socket,addr):  #接收客户端的ping$/;"	f
+reduce	.\src\�쳣.py	/^from functools import reduce$/;"	i
+refreshIptables	.\p2p_talk\server.py	/^    def refreshIptables(self,header,sock):  #获取更新iptables$/;"	m	class:Iptable
+refresh_k_bucket	.\p2p_talk\ptwop.py	/^    def refresh_k_bucket(self,nodes_str): #收到节点数据刷新k桶$/;"	m	class:Iptable
+register_node	.\src\Blockchain.py	/^    def register_node(self, address):$/;"	m	class:Blockchain
+register_nodes	.\src\Blockchain.py	/^def register_nodes():$/;"	f
+request	.\src\Blockchain.py	/^from flask import Flask, jsonify, request$/;"	i
+requests	.\getcar_info\car.py	/^import requests$/;"	i
+requests	.\p2p_talk\server.py	/^import requests,re$/;"	i
+requests	.\src\Blockchain.py	/^import requests$/;"	i
+requests	.\src\douban.py	/^import requests$/;"	i
+requests	.\src\get_cars.py	/^import requests$/;"	i
+requests	.\src\getbloginfo.py	/^import requests$/;"	i
+res	.\gitauto\git-robot.py	/^    res = sock.recv(4096).decode('utf-8')$/;"	v
+resolve_conflicts	.\src\Blockchain.py	/^    def resolve_conflicts(self):$/;"	m	class:Blockchain
+response_findnode	.\p2p_talk\ptwop.py	/^    def response_findnode(self,ip,port,nodeId):    #回复k桶数据$/;"	m	class:Iptable
+run_proc	.\src\process.py	/^def run_proc(name):$/;"	f
+s	.\gitauto\git-robot.py	/^s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)$/;"	v
+s	.\p2p_talk\client.py	/^s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)$/;"	v
+s	.\p2p_talk\ptwop.py	/^s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)$/;"	v
+s	.\p2p_talk\server.py	/^s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)$/;"	v
+s	.\src\FileStream.py	/^        s = f.read(1000)/;"	v
+s	.\src\FileStream.py	/^    s = f.read(1000)$/;"	v
+s	.\src\SearchFile.py	/^s = SearchFile('F:\\\\src\\\\python','py')$/;"	v
+search	.\src\BinarySearch.py	/^def search(a,left,right,num):$/;"	f
+send1	.\p2p_talk\client.py	/^send1 = threading.Thread(target=send_message, args=(s,))$/;"	v
+send_findnode	.\p2p_talk\ptwop.py	/^    def send_findnode(self,ip,port,nodeId):$/;"	m	class:Iptable
+send_message	.\p2p_talk\client.py	/^def send_message(sock):$/;"	f
+send_ping	.\p2p\client.py	/^def send_ping(socket,addr,msg=""): #send ping$/;"	f
+send_ping	.\p2p_talk\ptwop.py	/^    def send_ping(self,ip,port):$/;"	m	class:Iptable
+send_pong	.\p2p_talk\ptwop.py	/^    def send_pong(self,ip,port,nodeId):$/;"	m	class:Iptable
+send_radio	.\p2p_talk\server.py	/^    def send_radio(self):$/;"	m	class:Iptable
+size	.\src\bag.py	/^size = len(v)$/;"	v
+socket	.\gitauto\git-robot.py	/^import socket,os$/;"	i
+socket	.\p2p\client.py	/^import socket,time,threading,json$/;"	i
+socket	.\p2p_talk\client.py	/^import socket$/;"	i
+socket	.\p2p_talk\ptwop.py	/^import socket$/;"	i
+socket	.\p2p_talk\server.py	/^import socket$/;"	i
+socket	.\p2p_talk\test.py	/^import json,time,socket,os$/;"	i
+start	.\getcar_info\car.py	/^    start = i*10 $/;"	v
+str2num	.\src\�쳣.py	/^def str2num(s):$/;"	f
+struct	.\p2p_talk\ptwop.py	/^import threading,time,fcntl, struct,os,random,json$/;"	i
+struct	.\p2p_talk\server.py	/^import threading,time, struct,os,time,json$/;"	i
+sys	.\src\code.py	/^import sys$/;"	i
+t	.\getcar_info\car.py	/^    t = threading.Thread(target=GetCarsdata, args=(urls,))$/;"	v
+t	.\p2p\client.py	/^    t = threading.Thread(target=recv, args=(receive,addr)) $/;"	v
+t	.\p2p_talk\ptwop.py	/^    t = threading.Thread(target=iptable.recv, args=(header,))$/;"	v	class:Iptable
+t	.\p2p_talk\server.py	/^    t = threading.Thread(target=iptable.recv, args=(sock, addr))$/;"	v	class:Iptable
+test_0_to_60	.\src\TestStudent.py	/^    def test_0_to_60(self):$/;"	m	class:TestStudent
+test_60_to_80	.\src\TestStudent.py	/^    def test_60_to_80(self):$/;"	m	class:TestStudent
+test_80_to_100	.\src\TestStudent.py	/^    def test_80_to_100(self):$/;"	m	class:TestStudent
+test_invalid	.\src\TestStudent.py	/^    def test_invalid(self):$/;"	m	class:TestStudent
+threading	.\getcar_info\car.py	/^import chardet,re,pymysql,threading,time$/;"	i
+threading	.\p2p\client.py	/^import socket,time,threading,json$/;"	i
+threading	.\p2p_talk\client.py	/^import threading,time$/;"	i
+threading	.\p2p_talk\ptwop.py	/^import threading,time,fcntl, struct,os,random,json$/;"	i
+threading	.\p2p_talk\server.py	/^import threading,time, struct,os,time,json$/;"	i
+threading	.\src\Thread.py	/^import threading, multiprocessing$/;"	i
+time	.\getcar_info\car.py	/^import chardet,re,pymysql,threading,time$/;"	i
+time	.\gitauto\git-robot.py	/^import json,time$/;"	i
+time	.\p2p\client.py	/^import socket,time,threading,json$/;"	i
+time	.\p2p_talk\client.py	/^import threading,time$/;"	i
+time	.\p2p_talk\ptwop.py	/^import threading,time,fcntl, struct,os,random,json$/;"	i
+time	.\p2p_talk\server.py	/^import threading,time, struct,os,time,json$/;"	i
+time	.\p2p_talk\test.py	/^import json,time,socket,os$/;"	i
+time	.\src\Blockchain.py	/^from time import time$/;"	i
+time	.\src\ProcessPool.py	/^import os, time, random$/;"	i
+time	.\src\quicksort.py	/^import time$/;"	i
+tmp1	.\bage.py	/^            tmp1 = v[i-1] + vec[i - 1][j - w[i-1]]$/;"	v
+tmp2	.\bage.py	/^            tmp2 = vec[i - 1][j]$/;"	v
+tree	.\p2p_talk\test.py	/^tree = NodeTree({"id":"1011001","ip":"127.0.0.1"})$/;"	v
+trim	.\src\trim.py	/^def trim(s):$/;"	f
+unittest	.\src\TestStudent.py	/^import unittest$/;"	i
+urlparse	.\src\Blockchain.py	/^from urllib.parse import urlparse$/;"	i
+urls	.\getcar_info\car.py	/^    urls = GetBrandsPage(start)$/;"	v
+uuid4	.\src\Blockchain.py	/^from uuid import uuid4$/;"	i
+v	.\bage.py	/^v = [2, 3, 1, 5, 4, 3]$/;"	v
+v	.\src\bag.py	/^        v = value + v[r]  #当前价值$/;"	v
+v	.\src\bag.py	/^v = [1,3,5,7]$/;"	v
+valid_chain	.\src\Blockchain.py	/^    def valid_chain(self, chain):$/;"	m	class:Blockchain
+valid_proof	.\src\Blockchain.py	/^    def valid_proof(last_proof, proof):$/;"	m	class:Blockchain
+value	.\src\bag.py	/^    value = 0$/;"	v
+vec	.\bage.py	/^vec = np.zeros([n+1,m+1],int)$/;"	v
+w	.\bage.py	/^w = [2, 2, 3, 1, 5, 2]$/;"	v
+w	.\src\bag.py	/^w = [3,5,7,6]$/;"	v
+wb	.\src\douban.py	/^wb = Workbook()$/;"	v
+words	.\src\code.py	/^words = "abcdefghijklmnopqrstuvwxyz1234567890"$/;"	v
+ws1	.\src\douban.py	/^ws1 = wb.active$/;"	v
+yanghui	.\src\yanghuisanjiao.py	/^def yanghui(i,j):$/;"	f
